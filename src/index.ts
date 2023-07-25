@@ -1,5 +1,8 @@
+import { DeepPartial } from 'redux';
+
 import { ArrayType } from './types/ArrayType';
 import { Defined } from './types/Defined';
+import { Empty } from './types/Empty';
 import { Modify } from './types/Modify';
 import { PropsWith } from './types/PropsWith';
 import { PropsWithClassnames } from './types/PropsWithClassnames';
@@ -16,4 +19,6 @@ export {
   PropsWithClassnames,
   PropsWithId,
   PropsWithStyles,
+  Empty,
+  DeepPartial,
 };

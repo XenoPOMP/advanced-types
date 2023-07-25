@@ -63,3 +63,45 @@ import { PropsWith } from "@xenopomp/advanced-types";
 
 interface ButtonProps extends PropsWith<'children' | 'style', {}> {}
 ```
+
+## Empty
+
+This type stands for empty object type.
+
+```ts
+import { Empty } from "@xenopomp/advanced-types";
+
+const message: Empty = { type: string; }; // Will cause error.
+```
+
+## DeepPartial
+
+```ts
+import { DeepPartial } from "@xenopomp/advanced-types";
+
+type Address = {
+  firstAddress: {
+    country: string;
+    city: string;
+  },
+  
+  secondAddress: {
+    street: string;
+    homeNumber: number
+  }
+};
+
+type PartialAddress = DeepPartial<Address>;
+
+// {
+//   firstAddress?: {
+//     country?: string;
+//     city?: string;
+//   },
+//
+//   secondAddress?: {
+//     stree?t: string;
+//     homeNumber?: number
+//   }
+// }
+```

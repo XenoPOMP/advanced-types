@@ -11,7 +11,8 @@
     "build": "shx rm -rf dist && tsc"
   },
   "dependencies": {
-    "react": "^18.2.0"
+    "react": "^18.2.0",
+    "redux": "^4.2.1"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "4.1.1",
