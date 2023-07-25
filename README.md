@@ -44,14 +44,14 @@ type FullAddress = Modify<{name: string} & Address, 'address', string>;
 // }
 ```
 
-## NotRequired
+## Undefinable
 
 Create union type of T and ``undefined``.
 
 ```ts
-import { NotRequired } from "@xenopomp/advanced-types";
+import { Undefinable } from "@xenopomp/advanced-types";
 
-type Super = NotRequired<string>; // string | undefined
+type Super = Undefinable<string>; // string | undefined
 ```
 
 ## PropsWith
