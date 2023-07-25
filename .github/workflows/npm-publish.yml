@@ -22,12 +22,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
       - uses: actions/setup-node@v3
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
-      - run: yarn install --frozen-lockfile
-      - run: npm set "//registry.npmjs.org/:_authToken" ${{secrets.npm_token}}
+
+      - name: Install dependencies
+        run: |
+          yarn install --frozen-lockfile
+          npm i npm-cli-login -g
+
+      - name: Login to NPM registry
+        run: |
+          npm-cli-login -u ${{secrets.npm_login}} -p ${{secrets.npm_password}}
+
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
