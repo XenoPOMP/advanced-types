@@ -1,6 +1,6 @@
 {
   "name": "@xeno/advanced-types",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Library of advanced TypeScript types for React and Node projects.",
   "main": "src/index.ts",
   "repository": "https://github.com/XenoPOMP/advanced-types.git",

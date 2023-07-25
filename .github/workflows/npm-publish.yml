@@ -31,12 +31,9 @@ jobs:
       - name: Install dependencies
         run: |
           yarn install --frozen-lockfile
-          npm i npm-cli-login -g
 
-      - name: Login to NPM registry
-        run: |
-          npm-cli-login -u ${{secrets.npm_login}} -p ${{secrets.npm_password}} -e ${{secrets.npm_email}}
+      - name: Publish to npm registry
+        run: npm publish --access public
 
-      - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
