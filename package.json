@@ -1,0 +1,9 @@
+{
+  "name": "@xeno/advanced-types",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "repository": "https://github.com/XenoPOMP/advanced-types.git",
+  "author": "XenoPOMP <101574433+XenoPOMP@users.noreply.github.com>",
+  "license": "MIT",
+  "private": false
+}
