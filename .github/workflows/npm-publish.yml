@@ -35,7 +35,7 @@ jobs:
 
       - name: Login to NPM registry
         run: |
-          npm-cli-login -u ${{secrets.npm_login}} -p ${{secrets.npm_password}}
+          npm-cli-login -u ${{secrets.npm_login}} -p ${{secrets.npm_password}} -e ${{secrets.npm_email}}
 
       - run: npm publish
         env:
