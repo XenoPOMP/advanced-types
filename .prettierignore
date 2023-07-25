@@ -1,0 +1,13 @@
+# Declaration files
+*.d.ts
+
+# Testing
+**/__tests__/__snapshots__
+
+# Media files
+*.svg
+*.png
+*.jpg
+
+# CSS files
+*.scss
