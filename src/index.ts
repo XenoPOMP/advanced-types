@@ -8,6 +8,7 @@ import { PropsWith } from './types/PropsWith';
 import { PropsWithClassnames } from './types/PropsWithClassnames';
 import { PropsWithId } from './types/PropsWithId';
 import { PropsWithStyles } from './types/PropsWithStyles';
+import { RecordKey } from './types/RecordKey';
 import { Undefinable } from './types/Undefinable';
 
 export {
@@ -21,4 +22,5 @@ export {
   PropsWithStyles,
   Empty,
   DeepPartial,
+  RecordKey,
 };
