@@ -3,6 +3,9 @@ import { DeepPartial } from 'redux';
 import { ArrayType } from './types/ArrayType';
 import { Defined } from './types/Defined';
 import { Empty } from './types/Empty';
+import { EsmImport } from './types/EsmImport';
+import { KeyCodes } from './types/KeyCodes';
+import { MetaInfo } from './types/MetaInfo';
 import { Modify } from './types/Modify';
 import { PropsWith } from './types/PropsWith';
 import { PropsWithClassnames } from './types/PropsWithClassnames';
@@ -25,4 +28,7 @@ export {
   DeepPartial,
   RecordKey,
   RecordValue,
+  EsmImport,
+  KeyCodes,
+  MetaInfo,
 };
