@@ -13,6 +13,7 @@ import { PropsWithId } from './types/PropsWithId';
 import { PropsWithStyles } from './types/PropsWithStyles';
 import { RecordKey } from './types/RecordKey';
 import { RecordValue } from './types/RecordValue';
+import { SelectivePartial } from './types/SelectivePartial';
 import { Undefinable } from './types/Undefinable';
 
 export {
@@ -31,4 +32,5 @@ export {
   EsmImport,
   KeyCodes,
   MetaInfo,
+  SelectivePartial,
 };
