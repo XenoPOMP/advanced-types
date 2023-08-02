@@ -8,6 +8,7 @@
   "author": "XenoPOMP <101574433+XenoPOMP@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
+    "dev": "nodemon --exec \"yarn autodoc\" --ext \"ts\"",
     "build": "shx rm -rf dist && tsc",
     "autodoc": "ts-node .avt/scripts/autodoc.ts"
   },
@@ -19,6 +20,7 @@
     "@trivago/prettier-plugin-sort-imports": "4.1.1",
     "@types/node": "^20.4.4",
     "@xenopomp/advanced-types": "^1.0.7",
+    "nodemon": "^3.0.1",
     "prettier": "2.8.1",
     "shx": "^0.3.4",
     "ts-node": "^10.9.1",

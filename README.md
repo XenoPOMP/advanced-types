@@ -15,7 +15,7 @@ This library contains useful types for React and Node.js projects.
 * [SelectivePartial](/#selectivepartial)
 * [Undefinable](/#undefinable)
 
-### ArrayType
+## ArrayType
 
 
 This type gets type of array.
@@ -28,14 +28,14 @@ type Good = ArrayType<(string|number)[]>; // string | number
 
  ```
 
-### Defined
+## Defined
 
 
 Removes undefined from union type.
 
  
 
-### Empty
+## Empty
 
 
 This type stands for empty object type.
@@ -46,17 +46,17 @@ const message: Empty = { type: string; }; // Will cause error.
 
  ```
 
-### EsmImport
+## EsmImport
 
 
 This type is ES Module import alias.
 
  
 
-### Modify
+## Modify
 
 
-### PropsWith
+## PropsWith
 
 
 Universal props` wrapper.
@@ -89,7 +89,7 @@ console.log(NewProps.style); // CSSProperties
 
  ```
 
-### RecordKey
+## RecordKey
 
 
 Get typeof key of Record.
@@ -100,7 +100,7 @@ type Key = RecordKey<Record<string, number>>; // string
 
  ```
 
-### RecordValue
+## RecordValue
 
 
 Get typeof value of Record.
@@ -111,7 +111,7 @@ type Value = RecordValue<Record<string, number>>; // number
 
  ```
 
-### SelectivePartial
+## SelectivePartial
 
 
 Works as Partial, but makes only specified keys partial.
@@ -136,7 +136,7 @@ type Super = SelectivePartial<{
 
  ```
 
-### Undefinable
+## Undefinable
 
 
 Makes type union of type T and undefined
