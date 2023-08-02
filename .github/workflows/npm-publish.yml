@@ -56,6 +56,10 @@ jobs:
         with:
           node-version: 16
 
+      - name: Yarn clean install
+        run: |
+          yarn install --frozen-lockfile
+
       - name: Build types
         run: |
           yarn build
