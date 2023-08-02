@@ -21,7 +21,7 @@ type ConcatenationVariants<P extends any = unknown> = {
 /**
  * Universal props` wrapper.
  *
- * C generic is concatenation variant of type {@link ConcatenationVariants}.
+ * C generic is concatenation variant of type ConcatenationVariants.
  *
  * P generic is input type that is being wrapped.
  *
@@ -39,8 +39,6 @@ type ConcatenationVariants<P extends any = unknown> = {
  * const NewProps: PropsWith<'children' | 'style', {}> = {};
  * console.log(NewProps.children); // ReactNode
  * console.log(NewProps.style); // CSSProperties
- *
- * @return  wrapped type.
  */
 export type PropsWith<
   C extends keyof ConcatenationVariants<P>,

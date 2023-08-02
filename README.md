@@ -2,108 +2,143 @@
 
 This library contains useful types for React and Node.js projects.
 
-## ArrayType
+## Navigation
+
+* [ArrayType](/#arraytype)
+* [Defined](/#defined)
+* [Empty](/#empty)
+* [EsmImport](/#esmimport)
+* [Modify](/#modify)
+* [PropsWith](/#propswith)
+* [RecordKey](/#recordkey)
+* [RecordValue](/#recordvalue)
+* [SelectivePartial](/#selectivepartial)
+* [Undefinable](/#undefinable)
+
+### ArrayType
+
 
 This type gets type of array.
 
 ```ts
-import { ArrayType } from "@xenopomp/advanced-types";
 
-type Num = ArrayType<number[]>; // number
-type Super = ArrayType<Array<string | number>>; // string | number
-```
+type Super = ArrayType<string[]>; // string
 
-## Defined
+type Good = ArrayType<(string|number)[]>; // string | number
+
+ ```
+
+### Defined
+
 
 Removes undefined from union type.
 
-```ts
-import { Defined } from "@xenopomp/advanced-types";
+ 
 
-type Real = Defined<string | undefined>; // string
-```
+### Empty
 
-## Modify
-
-Modifies K (Key) in T (Type), replace it with R (Replacement).
-
-```ts
-import { Modify } from "@xenopomp/advanced-types";
-
-type Address = {
-    address: {
-        street: string;
-        home: number;
-    }
-}
-
-type FullAddress = Modify<{name: string} & Address, 'address', string>;
-// {
-//     name: string;
-//     address: string;
-// }
-```
-
-## Undefinable
-
-Create union type of T and ``undefined``.
-
-```ts
-import { Undefinable } from "@xenopomp/advanced-types";
-
-type Super = Undefinable<string>; // string | undefined
-```
-
-## PropsWith
-
-Adds ``children``, ``style``, ``className`` or ``id`` prop(s) to type.
-
-```ts
-import { PropsWith } from "@xenopomp/advanced-types";
-
-interface ButtonProps extends PropsWith<'children' | 'style', {}> {}
-```
-
-## Empty
 
 This type stands for empty object type.
 
 ```ts
-import { Empty } from "@xenopomp/advanced-types";
 
 const message: Empty = { type: string; }; // Will cause error.
-```
 
-## DeepPartial
+ ```
+
+### EsmImport
+
+
+This type is ES Module import alias.
+
+ 
+
+### Modify
+
+
+### PropsWith
+
+
+Universal props` wrapper.
+
+C generic is concatenation variant of type ConcatenationVariants.
+
+P generic is input type that is being wrapped.
 
 ```ts
-import { DeepPartial } from "@xenopomp/advanced-types";
 
-type Address = {
-  firstAddress: {
-    country: string;
-    city: string;
-  },
-  
-  secondAddress: {
-    street: string;
-    homeNumber: number
-  }
-};
+// Children
 
-type PartialAddress = DeepPartial<Address>;
+const NewProps: PropsWith<'children', {}> = {};
 
-// {
-//   firstAddress?: {
-//     country?: string;
-//     city?: string;
-//   },
-//
-//   secondAddress?: {
-//     stree?t: string;
-//     homeNumber?: number
-//   }
-// }
-```
+console.log(NewProps.children); // ReactNode
 
-And other...
+// Style
+
+const NewProps: PropsWith<'style', {}> = {};
+
+console.log(NewProps.style); // CSSProperties
+
+// Multi
+
+const NewProps: PropsWith<'children' | 'style', {}> = {};
+
+console.log(NewProps.children); // ReactNode
+
+console.log(NewProps.style); // CSSProperties
+
+ ```
+
+### RecordKey
+
+
+Get typeof key of Record.
+
+```ts
+
+type Key = RecordKey<Record<string, number>>; // string
+
+ ```
+
+### RecordValue
+
+
+Get typeof value of Record.
+
+```ts
+
+type Value = RecordValue<Record<string, number>>; // number
+
+ ```
+
+### SelectivePartial
+
+
+Works as Partial, but makes only specified keys partial.
+
+```ts
+
+type Super = SelectivePartial<{
+
+ name: string;
+
+ address: {
+
+   street: string;
+
+   number: number
+
+ }
+
+}, 'address'>;
+
+// Property 'address' will be partial.
+
+ ```
+
+### Undefinable
+
+
+Makes type union of type T and undefined
+
+ 

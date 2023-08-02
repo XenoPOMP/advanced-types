@@ -1,6 +1,5 @@
 /**
- * Works as Partial, but makes only specified keys
- * partial.
+ * Works as Partial, but makes only specified keys partial.
  *
  * @example
  * type Super = SelectivePartial<{
