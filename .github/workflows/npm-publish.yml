@@ -38,7 +38,7 @@ jobs:
 
       - name: Commit
         run: |
-          git add README.md
+          git add .
           git commit -m "autodoc/update"
           git push origin master
 
