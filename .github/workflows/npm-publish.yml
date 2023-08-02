@@ -31,16 +31,15 @@ jobs:
           yarn install --frozen-lockfile
           yarn autodoc
 
-      - name: Commit and push changes
-        uses: GuillaumeFalourd/git-commit-push@v1.3
-        with:
-          name: ${{ github.actor }}
-          commit_message: autodoc/ update
-          target_branch: master
-          access_token: ${{ github.token }}
-          force: true
-          empty: false
-          tags: false
+      - name: Setup git config
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+
+      - name: Commit
+        run: |
+          git commit -m "autodoc/update"
+          git push origin master
 
   publish-npm:
     needs:
