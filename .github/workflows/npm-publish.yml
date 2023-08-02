@@ -17,19 +17,14 @@ jobs:
           node-version: 16
       - run: |
           yarn install --frozen-lockfile
+          npm i -g tsc
 
   docs:
-    needs: build
+    needs:
+      - build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-
-      - name: Yarn clean install
-        run: |
-          yarn install --frozen-lockfile
 
       - name: Generate docs
         run: |
@@ -52,14 +47,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-          registry-url: https://registry.npmjs.org/
-
-      - name: Yarn clean install
-        run: |
-          yarn install --frozen-lockfile
 
       - name: Build types
         run: |
