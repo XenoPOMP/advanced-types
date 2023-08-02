@@ -17,7 +17,6 @@ jobs:
           node-version: 16
       - run: |
           yarn install --frozen-lockfile
-          npm i -g tsc
 
   docs:
     needs: build
@@ -30,6 +29,7 @@ jobs:
 
       - name: Generate docs
         run: |
+          npm i -g tsc
           yarn autodoc
 
       - name: Commit and push changes
