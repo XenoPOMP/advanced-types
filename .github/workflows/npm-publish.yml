@@ -28,9 +28,8 @@ jobs:
 
       - name: Generate docs
         run: |
-          yarn global add ts-node
           yarn autodoc
-          
+
       - name: Commit and push changes
         if: steps.git-check.outputs.modified == 'true'
         run: |
