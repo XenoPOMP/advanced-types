@@ -17,10 +17,7 @@ jobs:
           node-version: 16
       - run: |
           yarn install --frozen-lockfile
-          npm i -g tsc npm-cli-login
-          
-          
-          npm-cli-login -u ${{secrets.npm_login}} -p ${{secrets.npm_password}} -e ${{secrets.npm_email}}
+          npm i -g tsc
 
   docs:
     needs:
