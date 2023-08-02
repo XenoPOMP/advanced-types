@@ -59,7 +59,7 @@ jobs:
         with:
           create_tag: "false"
           publish_command: "npm"
-          publish_args: "--non-interactive"
+#          publish_args: "--non-interactive"
 
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
