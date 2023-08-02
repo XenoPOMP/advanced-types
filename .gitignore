@@ -1,6 +1,5 @@
 .idea/*
 node_modules/*
-!dist/**/*.d.ts
-dist/**/*.js
+dist
 
 *error.log

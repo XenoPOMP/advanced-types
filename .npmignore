@@ -2,6 +2,7 @@
 node_modules/*
 .github
 .gitignore
+.avt
 src/scripts
 
 *error.log
