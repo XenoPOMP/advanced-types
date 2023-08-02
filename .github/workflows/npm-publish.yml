@@ -31,18 +31,16 @@ jobs:
           yarn install --frozen-lockfile
           yarn autodoc
 
-      - run: |
-          echo Modified: ${{ steps.git-check.outputs.modified }}
-
       - name: Commit and push changes
-        if: steps.git-check.outputs.modified == 'true'
-        run: |
-          git config --global user.name 'Automated Publisher'
-          git config --global user.email 'actions@users.noreply.github.com'
-          git commit -am "autodoc/ update"
-          
-          git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
-          git push
+        uses: GuillaumeFalourd/git-commit-push@v1.3
+        with:
+          name: ${{ github.actor }}
+          commit_message: autodoc/ update
+          target_branch: master
+          access_token: ${{ github.token }}
+          force: true
+          empty: true
+          tags: false
 
   publish-npm:
     needs:
