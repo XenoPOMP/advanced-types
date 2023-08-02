@@ -38,8 +38,8 @@ jobs:
 
       - name: Commit
         run: |
-          git add .
-          git commit -m "autodoc/update"
+          git add README.md
+          git commit -u "autodoc/update"
           git push origin master
 
   publish-npm:
