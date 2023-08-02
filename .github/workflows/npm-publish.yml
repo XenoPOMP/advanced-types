@@ -19,33 +19,9 @@ jobs:
           yarn install --frozen-lockfile
           npm i tsc -g
 
-  docs:
-    needs:
-      - build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2.3.4
-
-      - name: Generate docs
-        run: |
-          yarn install --frozen-lockfile
-          yarn autodoc
-
-      - name: Setup git config
-        run: |
-          git config user.name "GitHub Actions Bot"
-          git config user.email "<>"
-
-      - name: Commit
-        run: |
-          git add .
-          git commit -u "autodoc/update"
-          git push origin master
-
   publish-npm:
     needs:
       - build
-      - docs
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
