@@ -55,6 +55,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
+          registry-url: https://registry.npmjs.org/
 
       - name: Yarn clean install
         run: |
