@@ -1,6 +1,6 @@
 {
   "name": "@xenopomp/advanced-types",
-  "version": "1.0.12",
+  "version": "1.0.8",
   "description": "Library of advanced TypeScript types for React and Node projects.",
   "main": "src/index.ts",
   "types": "dist/index.d.ts",
