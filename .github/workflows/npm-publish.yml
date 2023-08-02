@@ -27,9 +27,12 @@ jobs:
         with:
           node-version: 16
 
+      - name: Yarn clean install
+        run: |
+          yarn install --frozen-lockfile
+
       - name: Generate docs
         run: |
-          npm i -g tsc
           yarn autodoc
 
       - name: Commit and push changes
