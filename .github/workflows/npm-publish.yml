@@ -18,6 +18,8 @@ jobs:
       - run: |
           yarn install --frozen-lockfile
           npm i -g tsc
+          
+          echo "${{secrets.npm_token}}" >> ~/.npmrc
 
   docs:
     needs:
