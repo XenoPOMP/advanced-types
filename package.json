@@ -1,6 +1,6 @@
 {
   "name": "@xenopomp/advanced-types",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Library of advanced TypeScript types for React and Node projects.",
   "main": "src/index.ts",
   "types": "dist/index.d.ts",
@@ -9,7 +9,7 @@
   "license": "MIT",
   "scripts": {
     "build": "shx rm -rf dist && tsc",
-    "autodoc": "ts-node ./.avt/scripts/autodoc/index.ts"
+    "autodoc": "ts-node .avt/scripts/autodoc.ts"
   },
   "dependencies": {
     "react": "^18.2.0",

@@ -24,6 +24,15 @@ jobs:
       - name: Generate docs
         run: |
           yarn autodoc
+      - name: Commit and push changes
+        if: steps.git-check.outputs.modified == 'true'
+        run: |
+          git config --global user.name 'Automated Publisher'
+          git config --global user.email 'actions@users.noreply.github.com'
+          git commit -am "autodoc/ update"
+          
+          git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+          git push
 
   publish-npm:
     needs:
