@@ -31,6 +31,9 @@ jobs:
           yarn install --frozen-lockfile
           yarn autodoc
 
+      - run: |
+          echo Modified: ${{ steps.git-check.outputs.modified }}
+
       - name: Commit and push changes
         if: steps.git-check.outputs.modified == 'true'
         run: |
