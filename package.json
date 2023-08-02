@@ -10,7 +10,6 @@
   "scripts": {
     "build": "shx rm -rf dist && tsc",
     "autodoc": "ts-node ./.avt/scripts/autodoc/index.ts",
-    "prepublishOnly": "yarn autodoc"
   },
   "dependencies": {
     "react": "^18.2.0",

@@ -17,12 +17,20 @@ jobs:
           node-version: 16
       - run: yarn install --frozen-lockfile
 
-  publish-npm:
+  docs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Generate docs
+        run: |
+          yarn autodoc
 
+  publish-npm:
+    needs:
+      - build
+      - docs
+    runs-on: ubuntu-latest
+    steps:
       - name: Build types
         run: |
           yarn build
