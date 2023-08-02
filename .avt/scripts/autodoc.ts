@@ -97,7 +97,7 @@ const navigation: string =
 
 const parsedTypeMessages: string = typeMessages
   .map(message => {
-    return [`### ${message.typeName}`, message.comment].join('\n');
+    return [`## ${message.typeName}`, message.comment].join('\n');
   })
   .join('\n\n');
 
