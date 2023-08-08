@@ -1,6 +1,7 @@
 import { DeepPartial } from 'redux';
 
 import { ArrayType } from './types/ArrayType';
+import { AsyncFC } from './types/AsyncFC';
 import { Defined } from './types/Defined';
 import { Empty } from './types/Empty';
 import { EsmImport } from './types/EsmImport';
@@ -13,6 +14,7 @@ import { PropsWithId } from './types/PropsWithId';
 import { PropsWithStyles } from './types/PropsWithStyles';
 import { RecordKey } from './types/RecordKey';
 import { RecordValue } from './types/RecordValue';
+import { ReplaceReturnType } from './types/ReplaceReturnType';
 import { SelectivePartial } from './types/SelectivePartial';
 import { Undefinable } from './types/Undefinable';
 
@@ -33,4 +35,6 @@ export {
   KeyCodes,
   MetaInfo,
   SelectivePartial,
+  AsyncFC,
+  ReplaceReturnType,
 };

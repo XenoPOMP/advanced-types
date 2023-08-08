@@ -5,6 +5,7 @@ This library contains useful types for React and Node.js projects.
 ## Navigation
 
 * [ArrayType](/#arraytype)
+* [AsyncFC](/#asyncfc)
 * [Defined](/#defined)
 * [Empty](/#empty)
 * [EsmImport](/#esmimport)
@@ -12,6 +13,7 @@ This library contains useful types for React and Node.js projects.
 * [PropsWith](/#propswith)
 * [RecordKey](/#recordkey)
 * [RecordValue](/#recordvalue)
+* [ReplaceReturnType](/#replacereturntype)
 * [SelectivePartial](/#selectivepartial)
 * [Undefinable](/#undefinable)
 
@@ -25,6 +27,23 @@ This type gets type of array.
 type Super = ArrayType<string[]>; // string
 
 type Good = ArrayType<(string|number)[]>; // string | number
+
+ ```
+
+## AsyncFC
+
+
+Same as **FC** (or FunctionalComponent), but it returns Promise.
+
+```ts
+
+const Header: AsyncFC<HeaderProps> = async ({}) => {
+
+  // Do async stuff here...
+
+  return <div></div>;
+
+};
 
  ```
 
@@ -108,6 +127,17 @@ Get typeof value of Record.
 ```ts
 
 type Value = RecordValue<Record<string, number>>; // number
+
+ ```
+
+## ReplaceReturnType
+
+
+This type replace return type of function with other type.
+
+```ts
+
+type StringFC<T = {}> = ReplaceReturnType<FC<T>, string>;
 
  ```
 
