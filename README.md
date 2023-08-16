@@ -9,6 +9,7 @@ This library contains useful types for React and Node.js projects.
 * [Defined](/#defined)
 * [Empty](/#empty)
 * [EsmImport](/#esmimport)
+* [FunctionType](/#functiontype)
 * [Modify](/#modify)
 * [PropsWith](/#propswith)
 * [RecordKey](/#recordkey)
@@ -50,10 +51,6 @@ const Header: AsyncFC<HeaderProps> = async ({}) => {
 ## Defined
 
 
-Removes undefined from union type.
-
- 
-
 ## Empty
 
 
@@ -71,6 +68,21 @@ const message: Empty = { type: string; }; // Will cause error.
 This type is ES Module import alias.
 
  
+
+## FunctionType
+
+
+Constructs function type.
+
+```ts
+
+const doSomething: FunctionType<(text: string) => any, string> = text => {
+
+  return text;
+
+};
+
+ ```
 
 ## Modify
 

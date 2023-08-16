@@ -5,6 +5,7 @@ import { AsyncFC } from './types/AsyncFC';
 import { Defined } from './types/Defined';
 import { Empty } from './types/Empty';
 import { EsmImport } from './types/EsmImport';
+import { FunctionType } from './types/FunctionType';
 import { KeyCodes } from './types/KeyCodes';
 import { MetaInfo } from './types/MetaInfo';
 import { Modify } from './types/Modify';
@@ -37,4 +38,5 @@ export {
   SelectivePartial,
   AsyncFC,
   ReplaceReturnType,
+  FunctionType,
 };
