@@ -12,6 +12,7 @@ This library contains useful types for React and Node.js projects.
 * [FunctionType](/#functiontype)
 * [Modify](/#modify)
 * [Primitive](/#primitive)
+* [PromiseReturnType](/#promisereturntype)
 * [PropsWith](/#propswith)
 * [RecordKey](/#recordkey)
 * [RecordValue](/#recordvalue)
@@ -58,6 +59,25 @@ This type is ES Module import alias.
 Primitive types union.
 
  
+
+## PromiseReturnType
+
+
+Get return type of Promise.
+
+```ts
+
+const doSomething = async (): Promise<string|number> => {
+
+  return 'result';
+
+}
+
+type Something = PromiseReturnType<typeof doSomething>;
+
+// string|number
+
+ ```
 
 ## PropsWith
 
