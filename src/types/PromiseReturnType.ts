@@ -1,3 +1,5 @@
+import { Primitive } from './Primitive';
+
 /**
  * Get return type of Promise.
  *
@@ -9,8 +11,5 @@
  * type Something = PromiseReturnType<typeof doSomething>;
  * // string|number
  */
-export type PromiseReturnType<F extends Function> = F extends (
-  ...args: any[]
-) => Promise<infer R>
-  ? R
-  : never;
+export type PromiseReturnType<F extends (...args: any[]) => Promise<any>> =
+  Awaited<ReturnType<F>>;
