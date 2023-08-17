@@ -1,5 +1,3 @@
-import { Primitive } from './Primitive';
-
 /**
  * Get return type of Promise.
  *
