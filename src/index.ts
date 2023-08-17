@@ -9,6 +9,7 @@ import { FunctionType } from './types/FunctionType';
 import { KeyCodes } from './types/KeyCodes';
 import { MetaInfo } from './types/MetaInfo';
 import { Modify } from './types/Modify';
+import { Primitive } from './types/Primitive';
 import { PropsWith } from './types/PropsWith';
 import { PropsWithClassnames } from './types/PropsWithClassnames';
 import { PropsWithId } from './types/PropsWithId';
@@ -39,4 +40,5 @@ export {
   AsyncFC,
   ReplaceReturnType,
   FunctionType,
+  Primitive,
 };

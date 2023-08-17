@@ -11,6 +11,7 @@ This library contains useful types for React and Node.js projects.
 * [EsmImport](/#esmimport)
 * [FunctionType](/#functiontype)
 * [Modify](/#modify)
+* [Primitive](/#primitive)
 * [PropsWith](/#propswith)
 * [RecordKey](/#recordkey)
 * [RecordValue](/#recordvalue)
@@ -21,32 +22,8 @@ This library contains useful types for React and Node.js projects.
 ## ArrayType
 
 
-This type gets type of array.
-
-```ts
-
-type Super = ArrayType<string[]>; // string
-
-type Good = ArrayType<(string|number)[]>; // string | number
-
- ```
-
 ## AsyncFC
 
-
-Same as **FC** (or FunctionalComponent), but it returns Promise.
-
-```ts
-
-const Header: AsyncFC<HeaderProps> = async ({}) => {
-
-  // Do async stuff here...
-
-  return <div></div>;
-
-};
-
- ```
 
 ## Defined
 
@@ -72,75 +49,24 @@ This type is ES Module import alias.
 ## FunctionType
 
 
-Constructs function type.
-
-```ts
-
-const doSomething: FunctionType<(text: string) => any, string> = text => {
-
-  return text;
-
-};
-
- ```
-
 ## Modify
 
+
+## Primitive
+
+
+Primitive types union.
+
+ 
 
 ## PropsWith
 
 
-Universal props` wrapper.
-
-C generic is concatenation variant of type ConcatenationVariants.
-
-P generic is input type that is being wrapped.
-
-```ts
-
-// Children
-
-const NewProps: PropsWith<'children', {}> = {};
-
-console.log(NewProps.children); // ReactNode
-
-// Style
-
-const NewProps: PropsWith<'style', {}> = {};
-
-console.log(NewProps.style); // CSSProperties
-
-// Multi
-
-const NewProps: PropsWith<'children' | 'style', {}> = {};
-
-console.log(NewProps.children); // ReactNode
-
-console.log(NewProps.style); // CSSProperties
-
- ```
-
 ## RecordKey
 
 
-Get typeof key of Record.
-
-```ts
-
-type Key = RecordKey<Record<string, number>>; // string
-
- ```
-
 ## RecordValue
 
-
-Get typeof value of Record.
-
-```ts
-
-type Value = RecordValue<Record<string, number>>; // number
-
- ```
 
 ## ReplaceReturnType
 
