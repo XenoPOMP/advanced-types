@@ -5,6 +5,7 @@ import { AsyncFC } from './types/AsyncFC';
 import { Defined } from './types/Defined';
 import { Empty } from './types/Empty';
 import { EsmImport } from './types/EsmImport';
+import { FunctionPrimitive } from './types/FunctionPrimitive';
 import { FunctionType } from './types/FunctionType';
 import { KeyCodes } from './types/KeyCodes';
 import { MetaInfo } from './types/MetaInfo';
@@ -43,4 +44,5 @@ export {
   FunctionType,
   Primitive,
   PromiseReturnType,
+  FunctionPrimitive,
 };

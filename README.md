@@ -9,6 +9,7 @@ This library contains useful types for React and Node.js projects.
 * [Defined](/#defined)
 * [Empty](/#empty)
 * [EsmImport](/#esmimport)
+* [QueryConstant](/#queryconstant)
 * [FunctionType](/#functiontype)
 * [Modify](/#modify)
 * [Primitive](/#primitive)
@@ -47,6 +48,25 @@ This type is ES Module import alias.
 
  
 
+## QueryConstant
+
+
+This type is function primitive that you can use as type `extends` constraint.
+
+```ts
+
+export type QueryConstant<
+
+  K extends string,
+
+  F extends FunctionPrimitive
+
+> = ...
+
+// FunctionPrimitive = (...args: any[]) => any
+
+ ```
+
 ## FunctionType
 
 
@@ -63,22 +83,6 @@ Primitive types union.
 ## PromiseReturnType
 
 
-Get return type of Promise.
-
-```ts
-
-const doSomething = async (): Promise<string|number> => {
-
-  return 'result';
-
-}
-
-type Something = PromiseReturnType<typeof doSomething>;
-
-// string|number
-
- ```
-
 ## PropsWith
 
 
@@ -90,14 +94,6 @@ type Something = PromiseReturnType<typeof doSomething>;
 
 ## ReplaceReturnType
 
-
-This type replace return type of function with other type.
-
-```ts
-
-type StringFC<T = {}> = ReplaceReturnType<FC<T>, string>;
-
- ```
 
 ## SelectivePartial
 
