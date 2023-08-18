@@ -2,7 +2,7 @@
  * This type is function primitive that you can use as type `extends` constraint.
  *
  * @example
- * export type QueryConstant<
+ * type QueryConstant<
  *   K extends string,
  *   F extends FunctionPrimitive
  * > = ...
