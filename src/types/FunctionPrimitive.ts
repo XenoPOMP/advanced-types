@@ -9,4 +9,4 @@
  *
  * // FunctionPrimitive = (...args: any[]) => any
  */
-export type FunctionPrimitive = (...args: any[]) => any;
+export type FunctionPrimitive<R extends any = any> = (...args: any[]) => R;

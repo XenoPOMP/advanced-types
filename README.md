@@ -33,20 +33,8 @@ This library contains useful types for React and Node.js projects.
 ## Empty
 
 
-This type stands for empty object type.
-
-```ts
-
-const message: Empty = { type: string; }; // Will cause error.
-
- ```
-
 ## EsmImport
 
-
-This type is ES Module import alias.
-
- 
 
 ## QueryConstant
 
@@ -76,10 +64,6 @@ export type QueryConstant<
 ## Primitive
 
 
-Primitive types union.
-
- 
-
 ## PromiseReturnType
 
 
@@ -98,31 +82,4 @@ Primitive types union.
 ## SelectivePartial
 
 
-Works as Partial, but makes only specified keys partial.
-
-```ts
-
-type Super = SelectivePartial<{
-
- name: string;
-
- address: {
-
-   street: string;
-
-   number: number
-
- }
-
-}, 'address'>;
-
-// Property 'address' will be partial.
-
- ```
-
 ## Undefinable
-
-
-Makes type union of type T and undefined
-
- 
