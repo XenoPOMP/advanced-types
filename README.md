@@ -9,7 +9,7 @@ This library contains useful types for React and Node.js projects.
 * [Defined](/#defined)
 * [Empty](/#empty)
 * [EsmImport](/#esmimport)
-* [QueryConstant](/#queryconstant)
+* [FunctionPrimitive](/#functionprimitive)
 * [FunctionType](/#functiontype)
 * [Modify](/#modify)
 * [Primitive](/#primitive)
@@ -24,6 +24,16 @@ This library contains useful types for React and Node.js projects.
 ## ArrayType
 
 
+This type gets type of array.
+
+```ts
+
+type Super = ArrayType<string[]>; // string
+
+type Good = ArrayType<(string|number)[]>; // string | number
+
+ ```
+
 ## AsyncFC
 
 
@@ -36,14 +46,14 @@ This library contains useful types for React and Node.js projects.
 ## EsmImport
 
 
-## QueryConstant
+## FunctionPrimitive
 
 
 This type is function primitive that you can use as type `extends` constraint.
 
 ```ts
 
-export type QueryConstant<
+type QueryConstant<
 
   K extends string,
 
