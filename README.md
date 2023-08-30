@@ -6,6 +6,7 @@ This library contains useful types for React and Node.js projects.
 
 * [ArrayType](/#arraytype)
 * [AsyncFC](/#asyncfc)
+* [DeepInject](/#deepinject)
 * [Defined](/#defined)
 * [Empty](/#empty)
 * [EsmImport](/#esmimport)
@@ -24,18 +25,21 @@ This library contains useful types for React and Node.js projects.
 ## ArrayType
 
 
-This type gets type of array.
+## AsyncFC
+
+
+## DeepInject
+
+
+Recursevely add some type inside all keys of target type.
 
 ```ts
 
-type Super = ArrayType<string[]>; // string
+type Sups = DeepInject<{ supa: { sups: number } }, { _ignore: boolean }>;
 
-type Good = ArrayType<(string|number)[]>; // string | number
+const asp: Sups = { supa: { sups: 1, _ignore: false }, _ignore: false };
 
  ```
-
-## AsyncFC
-
 
 ## Defined
 
@@ -43,27 +47,23 @@ type Good = ArrayType<(string|number)[]>; // string | number
 ## Empty
 
 
-## EsmImport
-
-
-## FunctionPrimitive
-
-
-This type is function primitive that you can use as type `extends` constraint.
+This type stands for empty object type.
 
 ```ts
 
-type QueryConstant<
-
-  K extends string,
-
-  F extends FunctionPrimitive
-
-> = ...
-
-// FunctionPrimitive = (...args: any[]) => any
+const message: Empty = { type: string; }; // Will cause error.
 
  ```
+
+## EsmImport
+
+
+This type is ES Module import alias.
+
+ 
+
+## FunctionPrimitive
+
 
 ## FunctionType
 
@@ -73,6 +73,10 @@ type QueryConstant<
 
 ## Primitive
 
+
+Primitive types union.
+
+ 
 
 ## PromiseReturnType
 
@@ -92,4 +96,31 @@ type QueryConstant<
 ## SelectivePartial
 
 
+Works as Partial, but makes only specified keys partial.
+
+```ts
+
+type Super = SelectivePartial<{
+
+ name: string;
+
+ address: {
+
+   street: string;
+
+   number: number
+
+ }
+
+}, 'address'>;
+
+// Property 'address' will be partial.
+
+ ```
+
 ## Undefinable
+
+
+Makes type union of type T and undefined
+
+ 
