@@ -2,6 +2,7 @@ import { DeepPartial } from 'redux';
 
 import { ArrayType } from './types/ArrayType';
 import { AsyncFC } from './types/AsyncFC';
+import { DeepInject } from './types/DeepInject';
 import { Defined } from './types/Defined';
 import { Empty } from './types/Empty';
 import { EsmImport } from './types/EsmImport';
@@ -45,4 +46,5 @@ export {
   Primitive,
   PromiseReturnType,
   FunctionPrimitive,
+  DeepInject,
 };
