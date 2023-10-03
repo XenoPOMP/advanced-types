@@ -1,13 +1,9 @@
+import { AsyncReturnType } from './AsyncReturnType';
+
 /**
- * Get return type of Promise.
+ * Get return type of function that returns Promise ((...args: any) => Promise<any>).
  *
- * @example
- * const doSomething = async (): Promise<string|number> => {
- *   return 'result';
- * }
- *
- * type Something = PromiseReturnType<typeof doSomething>;
- * // string|number
+ * @deprecated use {@link AsyncReturnType} instead
  */
 export type PromiseReturnType<F extends (...args: any[]) => Promise<any>> =
-  Awaited<ReturnType<F>>;
+  AsyncReturnType<F>;
