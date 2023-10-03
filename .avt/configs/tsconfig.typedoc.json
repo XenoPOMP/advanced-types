@@ -1,0 +1,12 @@
+{
+    "extends": [
+        "../../tsconfig.json"
+    ],
+    "include": [
+        "../../"
+    ],
+    "typedocOptions": {
+        "entryPoints": ["../../src/index.ts"],
+        "out": "../docs"
+    }
+}
