@@ -13,7 +13,7 @@
     "react"
   ],
   "scripts": {
-    "dev": "nodemon --exec \"yarn autodoc\" --ext \"ts\"",
+    "dev": "nodemon --exec \"yarn gendoc\" --ext \"ts\"",
     "build": "shx rm -rf dist && tsc",
     "autodoc": "ts-node .avt/scripts/autodoc.ts",
     "gendoc": "typedoc --tsconfig .avt/configs/tsconfig.typedoc.json"
