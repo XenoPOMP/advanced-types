@@ -36,6 +36,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
+
+      - name: Generate docs
         run: |
           npm i tsc yarn -g
           yarn install --frozen-lockfile
