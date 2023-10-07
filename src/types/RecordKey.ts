@@ -9,6 +9,4 @@ export type RecordKey<R extends Record<any, any>> = R extends Record<
   any
 >
   ? K
-  : R;
-
-const str: RecordKey<Record<string, number>> = '';
+  : never;

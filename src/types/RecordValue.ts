@@ -9,4 +9,4 @@ export type RecordValue<R extends Record<any, any>> = R extends Record<
   infer V
 >
   ? V
-  : R;
+  : never;

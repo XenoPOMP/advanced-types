@@ -6,4 +6,4 @@
  *
  * type Good = ArrayType<(string|number)[]>; // string | number
  */
-export type ArrayType<T> = T extends Array<infer A> ? A : T;
+export type ArrayType<T> = T extends Array<infer A> ? A : never;

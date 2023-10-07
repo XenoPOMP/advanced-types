@@ -7,6 +7,8 @@ import { ReplaceReturnType } from './ReplaceReturnType';
  * const doSomething: FunctionType<(text: string) => any, string> = text => {
  *   return text;
  * };
+ *
+ * @deprecated
  */
 export type FunctionType<
   Function extends (...args: any[]) => any,
