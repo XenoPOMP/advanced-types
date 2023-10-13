@@ -22,6 +22,7 @@ import { RecordValue } from './types/RecordValue';
 import { ReplaceReturnType } from './types/ReplaceReturnType';
 import { SelectivePartial } from './types/SelectivePartial';
 import { Undefinable } from './types/Undefinable';
+import { DeepWriteable, Writeable } from './types/Writeable';
 
 export {
   ArrayType,
@@ -47,4 +48,6 @@ export {
   PromiseReturnType,
   FunctionPrimitive,
   DeepInject,
+  DeepWriteable,
+  Writeable,
 };
