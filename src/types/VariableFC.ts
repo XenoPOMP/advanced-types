@@ -36,7 +36,7 @@ export type VariableFC<
 > = FC<P & Omit<ComponentProps<A>, Ex>>;
 
 /**
- * Works similar to [VariableFC](), but return type is Promise<ReactNode>;
+ * Works similar to {@link VariableFC}, but return type is Promise<ReactNode>;
  */
 export type AsyncVariableFC<
   A extends ElementType,
