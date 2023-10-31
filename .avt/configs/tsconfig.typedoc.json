@@ -6,10 +6,7 @@
         "../../"
     ],
     "typedocOptions": {
-        "entryPoints": [
-            "../../src/index.ts",
-            "../../src/react.ts"
-        ],
+        "entryPoints": ["../../src/index.ts"],
         "out": "../docs"
     }
 }
