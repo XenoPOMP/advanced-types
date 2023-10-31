@@ -6,7 +6,8 @@
     "sourceMap": false,
     "outDir": "dist",
     "declaration": true,
-    "declarationDir": "dist"
+    "declarationDir": "dist",
+    "emitDeclarationOnly": false
   },
   "exclude": [
     "node_modules",
