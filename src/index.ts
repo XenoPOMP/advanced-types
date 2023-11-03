@@ -2,6 +2,7 @@ import { DeepPartial } from 'redux';
 
 import { ArrayType } from './types/ArrayType';
 import { AsyncFC } from './types/AsyncFC';
+import { AsyncReturnType } from './types/AsyncReturnType';
 import { DeepInject } from './types/DeepInject';
 import { Defined } from './types/Defined';
 import { Empty } from './types/Empty';
@@ -26,6 +27,7 @@ import { AsyncVariableFC, VariableFC } from './types/VariableFC';
 import { DeepWriteable, Writeable } from './types/Writeable';
 
 export {
+  AsyncReturnType,
   ArrayType,
   Defined,
   Modify,
