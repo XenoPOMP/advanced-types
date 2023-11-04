@@ -24,6 +24,7 @@ import { ReplaceReturnType } from './types/ReplaceReturnType';
 import { SelectivePartial } from './types/SelectivePartial';
 import { Undefinable } from './types/Undefinable';
 import { AsyncVariableFC, VariableFC } from './types/VariableFC';
+import { NextErrorParams, WithErrorParams } from './types/WithErrorParams';
 import { NextParams, WithParams } from './types/WithParams';
 import { DeepWriteable, Writeable } from './types/Writeable';
 
@@ -58,4 +59,6 @@ export {
   VariableFC,
   NextParams,
   WithParams,
+  NextErrorParams,
+  WithErrorParams,
 };
