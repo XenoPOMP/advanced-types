@@ -15,5 +15,5 @@ export type NextParams<K extends string> = Record<K, string>;
  * };
  */
 export type WithParams<T extends any, P extends string = undefined> = T & {
-  params: P extends undefined ? unknown : NextParams<P>;
+  params: NextParams<P>;
 };
