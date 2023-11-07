@@ -26,6 +26,7 @@ import { Undefinable } from './types/Undefinable';
 import { AsyncVariableFC, VariableFC } from './types/VariableFC';
 import { NextErrorParams, WithErrorParams } from './types/WithErrorParams';
 import { NextParams, WithParams } from './types/WithParams';
+import { WithSearchParams } from './types/WithSearchParams';
 import { DeepWriteable, Writeable } from './types/Writeable';
 
 export {
@@ -61,4 +62,5 @@ export {
   WithParams,
   NextErrorParams,
   WithErrorParams,
+  WithSearchParams,
 };
