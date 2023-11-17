@@ -1,13 +1,16 @@
 /**
  * This type describes Next parameters.
  */
-export type NextParams<K extends string> = K extends undefined
-  ? unknown
-  : Record<K, string>;
+export type NextParams<K extends string> = Record<
+  Extract<K, PropertyKey>,
+  string
+>;
 
 /**
  * Adds property *__params__* of type {@link NextParams} with
  * defined parameter names (second generic argument. Is optional).
+ *
+ * @see https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes#typescript
  *
  * @example
  * type Props = WithParams<{ args?: Array<number> }>;
