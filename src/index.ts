@@ -9,6 +9,7 @@ import { Empty } from './types/Empty';
 import { EsmImport } from './types/EsmImport';
 import { FunctionPrimitive } from './types/FunctionPrimitive';
 import { FunctionType } from './types/FunctionType';
+import { FunctionalChildren } from './types/FunctionalChildren';
 import { KeyCodes } from './types/KeyCodes';
 import { MetaInfo } from './types/MetaInfo';
 import { Modify } from './types/Modify';
@@ -45,6 +46,7 @@ export {
   RecordValue,
   EsmImport,
   KeyCodes,
+  FunctionalChildren,
   MetaInfo,
   SelectivePartial,
   AsyncFC,
