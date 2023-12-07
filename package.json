@@ -1,6 +1,6 @@
 {
   "name": "@xenopomp/advanced-types",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Library of advanced TypeScript types for React and Node projects.",
   "main": "src/index.ts",
   "types": "dist/index.d.ts",
@@ -30,6 +30,7 @@
     "nodemon": "^3.0.1",
     "prettier": "2.8.1",
     "shx": "^0.3.4",
+    "tailwindcss": "^3.3.6",
     "ts-node": "^10.9.1",
     "typedoc": "^0.25.1",
     "typescript": "^5.1.6"

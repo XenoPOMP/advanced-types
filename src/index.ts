@@ -10,9 +10,11 @@ import { EsmImport } from './types/EsmImport';
 import { FunctionPrimitive } from './types/FunctionPrimitive';
 import { FunctionType } from './types/FunctionType';
 import { FunctionalChildren } from './types/FunctionalChildren';
+import { Jsonish } from './types/Jsonish';
 import { KeyCodes } from './types/KeyCodes';
 import { MetaInfo } from './types/MetaInfo';
 import { Modify } from './types/Modify';
+import { Nullable } from './types/Nullable';
 import { Primitive } from './types/Primitive';
 import { PromiseReturnType } from './types/PromiseReturnType';
 import { PropsWith } from './types/PropsWith';
@@ -65,4 +67,6 @@ export {
   NextErrorParams,
   WithErrorParams,
   WithSearchParams,
+  Jsonish,
+  Nullable,
 };
