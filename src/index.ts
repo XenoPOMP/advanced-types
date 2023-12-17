@@ -1,72 +1,34 @@
-import { DeepPartial } from 'redux';
+export { DeepPartial } from 'redux';
 
-import { ArrayType } from './types/ArrayType';
-import { AsyncFC } from './types/AsyncFC';
-import { AsyncReturnType } from './types/AsyncReturnType';
-import { DeepInject } from './types/DeepInject';
-import { Defined } from './types/Defined';
-import { Empty } from './types/Empty';
-import { EsmImport } from './types/EsmImport';
-import { FunctionPrimitive } from './types/FunctionPrimitive';
-import { FunctionType } from './types/FunctionType';
-import { FunctionalChildren } from './types/FunctionalChildren';
-import { Jsonish } from './types/Jsonish';
-import { KeyCodes } from './types/KeyCodes';
-import { MetaInfo } from './types/MetaInfo';
-import { Modify } from './types/Modify';
-import { Nullable } from './types/Nullable';
-import { Primitive } from './types/Primitive';
-import { PromiseReturnType } from './types/PromiseReturnType';
-import { PropsWith } from './types/PropsWith';
-import { PropsWithClassnames } from './types/PropsWithClassnames';
-import { PropsWithId } from './types/PropsWithId';
-import { PropsWithStyles } from './types/PropsWithStyles';
-import { RecordKey } from './types/RecordKey';
-import { RecordValue } from './types/RecordValue';
-import { ReplaceReturnType } from './types/ReplaceReturnType';
-import { SelectivePartial } from './types/SelectivePartial';
-import { Undefinable } from './types/Undefinable';
-import { AsyncVariableFC, VariableFC } from './types/VariableFC';
-import { NextErrorParams, WithErrorParams } from './types/WithErrorParams';
-import { NextParams, WithParams } from './types/WithParams';
-import { WithSearchParams } from './types/WithSearchParams';
-import { DeepWriteable, Writeable } from './types/Writeable';
-
-export {
-  AsyncReturnType,
-  ArrayType,
-  Defined,
-  Modify,
-  Undefinable,
-  PropsWith,
-  PropsWithClassnames,
-  PropsWithId,
-  PropsWithStyles,
-  Empty,
-  DeepPartial,
-  RecordKey,
-  RecordValue,
-  EsmImport,
-  KeyCodes,
-  FunctionalChildren,
-  MetaInfo,
-  SelectivePartial,
-  AsyncFC,
-  ReplaceReturnType,
-  FunctionType,
-  Primitive,
-  PromiseReturnType,
-  FunctionPrimitive,
-  DeepInject,
-  DeepWriteable,
-  Writeable,
-  AsyncVariableFC,
-  VariableFC,
-  NextParams,
-  WithParams,
-  NextErrorParams,
-  WithErrorParams,
-  WithSearchParams,
-  Jsonish,
-  Nullable,
-};
+export { ArrayType } from './types/ArrayType';
+export { AsyncFC } from './types/AsyncFC';
+export { AsyncReturnType } from './types/AsyncReturnType';
+export { DeepInject } from './types/DeepInject';
+export { Defined } from './types/Defined';
+export { Empty } from './types/Empty';
+export { EsmImport } from './types/EsmImport';
+export { FunctionPrimitive } from './types/FunctionPrimitive';
+export { FunctionType } from './types/FunctionType';
+export { FunctionalChildren } from './types/FunctionalChildren';
+export { Jsonish } from './types/Jsonish';
+export { KeyCodes } from './types/KeyCodes';
+export { MetaInfo } from './types/MetaInfo';
+export { Modify } from './types/Modify';
+export { Nullable } from './types/Nullable';
+export { Primitive } from './types/Primitive';
+export { PromiseReturnType } from './types/PromiseReturnType';
+export { PropsWith } from './types/PropsWith';
+export { PropsWithClassnames } from './types/PropsWithClassnames';
+export { PropsWithId } from './types/PropsWithId';
+export { PropsWithStyles } from './types/PropsWithStyles';
+export { RecordKey } from './types/RecordKey';
+export { RecordValue } from './types/RecordValue';
+export { ReplaceReturnType } from './types/ReplaceReturnType';
+export { SelectivePartial } from './types/SelectivePartial';
+export { Undefinable } from './types/Undefinable';
+export { AsyncVariableFC, VariableFC } from './types/VariableFC';
+export { NextErrorParams, WithErrorParams } from './types/WithErrorParams';
+export { NextParams, WithParams } from './types/WithParams';
+export { WithSearchParams } from './types/WithSearchParams';
+export { DeepWriteable, Writeable } from './types/Writeable';
+export { MatchType } from './types/MatchType';
