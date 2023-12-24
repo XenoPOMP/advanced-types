@@ -1,5 +1,7 @@
 export { DeepPartial } from 'redux';
 
+export * from 'type-fest';
+
 export { ArrayType } from './types/ArrayType';
 export { AsyncFC } from './types/AsyncFC';
 export { AsyncReturnType } from './types/AsyncReturnType';
