@@ -11,3 +11,6 @@
 
 # CSS files
 *.scss
+
+# Node
+node_modules
