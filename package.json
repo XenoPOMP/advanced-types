@@ -18,6 +18,9 @@
     "autodoc": "ts-node .avt/scripts/autodoc.ts",
     "gendoc": "typedoc --tsconfig .avt/configs/tsconfig.typedoc.json"
   },
+  "files": [
+    "dist"
+  ],
   "dependencies": {},
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "4.1.1",
