@@ -1,5 +1,3 @@
-export { DeepPartial } from 'redux';
-
 export * from 'type-fest/index';
 
 export { ArrayType } from './types/ArrayType';
