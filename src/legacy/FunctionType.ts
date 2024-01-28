@@ -1,4 +1,4 @@
-import { ReplaceReturnType } from './ReplaceReturnType';
+import { ReplaceReturnType } from '../utilities/ReplaceReturnType';
 
 /**
  * Constructs function type.

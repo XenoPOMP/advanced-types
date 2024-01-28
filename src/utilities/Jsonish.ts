@@ -1,7 +1,8 @@
 import { RecursiveKeyValuePair } from 'tailwindcss/types/config';
 
+import { Primitive } from '../aliases/Primitive';
+
 import { Nullable } from './Nullable';
-import { Primitive } from './Primitive';
 
 type JsonSchemaType = RecursiveKeyValuePair<
   PropertyKey,

@@ -1,4 +1,4 @@
-import { AsyncReturnType } from './AsyncReturnType';
+import { AsyncReturnType } from '../utilities/AsyncReturnType';
 
 /**
  * Get return type of function that returns Promise ((...args: any) => Promise<any>).
