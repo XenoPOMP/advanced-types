@@ -1,32 +1,18 @@
-export { ArrayType } from './types/ArrayType';
-export { AsyncFC } from './types/AsyncFC';
-export { AsyncReturnType } from './types/AsyncReturnType';
-export { DeepInject } from './types/DeepInject';
-export { Defined } from './types/Defined';
-export { Empty } from './types/Empty';
-export { EsmImport } from './types/EsmImport';
-export { FunctionPrimitive } from './types/FunctionPrimitive';
-export { FunctionType } from './types/FunctionType';
-export { FunctionalChildren } from './types/FunctionalChildren';
-export { Jsonish } from './types/Jsonish';
-export { KeyCodes } from './types/KeyCodes';
-export { MetaInfo } from './types/MetaInfo';
-export { Modify } from './types/Modify';
-export { Nullable } from './types/Nullable';
-export { Primitive } from './types/Primitive';
-export { PromiseReturnType } from './types/PromiseReturnType';
-export { PropsWith } from './types/PropsWith';
-export { PropsWithClassnames } from './types/PropsWithClassnames';
-export { PropsWithId } from './types/PropsWithId';
-export { PropsWithStyles } from './types/PropsWithStyles';
-export { RecordKey } from './types/RecordKey';
-export { RecordValue } from './types/RecordValue';
-export { ReplaceReturnType } from './types/ReplaceReturnType';
-export { SelectivePartial } from './types/SelectivePartial';
-export { Undefinable } from './types/Undefinable';
-export { AsyncVariableFC, VariableFC } from './types/VariableFC';
-export { NextErrorParams, WithErrorParams } from './types/WithErrorParams';
-export { NextParams, WithParams } from './types/WithParams';
-export { WithSearchParams } from './types/WithSearchParams';
-export { DeepWriteable, Writeable } from './types/Writeable';
-export { MatchType } from './types/MatchType';
+// Aliases
+export * from './aliases';
+
+// Utilities
+export * from './utilities';
+
+// React
+export * from './react';
+
+// Next.js
+export * from './next';
+
+// Legacy
+export { PromiseReturnType } from './legacy/PromiseReturnType';
+export { MetaInfo } from './legacy/MetaInfo';
+export { KeyCodes } from './legacy/KeyCodes';
+export { FunctionType } from './legacy/FunctionType';
+export { EsmImport } from './legacy/EsmImport';

@@ -1,3 +1,6 @@
+/**
+ * @deprecated
+ */
 export const KeyCodes = {
   Backspace: 'Backspace',
   Tab: 'Tab',
