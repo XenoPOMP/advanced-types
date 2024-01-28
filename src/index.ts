@@ -1,5 +1,3 @@
-export * from 'type-fest/index';
-
 export { ArrayType } from './types/ArrayType';
 export { AsyncFC } from './types/AsyncFC';
 export { AsyncReturnType } from './types/AsyncReturnType';
