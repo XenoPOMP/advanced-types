@@ -16,3 +16,6 @@ export { MetaInfo } from './legacy/MetaInfo';
 export { KeyCodes } from './legacy/KeyCodes';
 export { FunctionType } from './legacy/FunctionType';
 export { EsmImport } from './legacy/EsmImport';
+// export { NoInfer } from './legacy/NoInfer';
+
+type Sus = NoInfer<any>;

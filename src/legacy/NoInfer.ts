@@ -23,5 +23,7 @@
  * });
  *
  * @see https://youtu.be/QSIXYMIJkQg?si=EySLwUb23wowmEf_&t=371
+ *
+ * @deprecated
  */
 export type NoInfer<T> = [T][T extends any ? 0 : never];
