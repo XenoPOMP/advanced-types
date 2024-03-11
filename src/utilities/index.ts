@@ -1,5 +1,4 @@
 export { Synchronous } from './Synchronous';
-export { NoInfer } from './NoInfer';
 export { DeepWriteable, Writeable } from './Writeable';
 export { MatchType } from './MatchType';
 export { ArrayType } from './ArrayType';
