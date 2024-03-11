@@ -1,3 +1,5 @@
+import { NoInferLegacy } from './NoInfer-legacy';
+
 /**
  * Implementation of type that will be built-in into TypeScript
  * in the future.
@@ -24,6 +26,6 @@
  *
  * @see https://youtu.be/QSIXYMIJkQg?si=EySLwUb23wowmEf_&t=371
  *
- * @deprecated
+ * @deprecated TypeScript ^5.4 has own implementation of this type.
  */
-export type NoInfer<T> = [T][T extends any ? 0 : never];
+export type NoInfer<T> = NoInferLegacy<T>;

@@ -30,7 +30,7 @@
     "shx": "^0.3.4",
     "tailwindcss": "^3.3.6",
     "ts-node": "^10.9.1",
-    "typedoc": "^0.25.1",
-    "typescript": "^5.4.2"
+    "typedoc": "0.25.12",
+    "typescript": "^5.4"
   }
 }
