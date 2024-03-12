@@ -12,6 +12,3 @@ This library contains useful types for React and Node.js projects.
 > ```bash
 > yarn add -D typescript@latest
 > ```
-
-## Documentation
-Documentation is available [here](https://xenopomp.github.io/advanced-types/).
