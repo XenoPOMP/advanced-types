@@ -1,5 +1,6 @@
 export * from './VariableFC';
 export * from './AsyncFC';
+export * from './SetState';
 
 export { PropsWith } from './PropsWith';
 export { PropsWithClassnames } from './PropsWithClassnames';
