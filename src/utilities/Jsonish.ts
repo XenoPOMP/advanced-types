@@ -1,6 +1,6 @@
 import { RecursiveKeyValuePair } from 'tailwindcss/types/config';
 
-import { Primitive } from '../aliases/Primitive';
+import { Primitive } from '../aliases';
 
 import { Nullable } from './Nullable';
 
