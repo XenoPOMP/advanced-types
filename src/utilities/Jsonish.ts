@@ -1,4 +1,5 @@
 import { RecursiveKeyValuePair } from 'tailwindcss/types/config';
+import { Sus } from 'type-fest';
 
 import { Primitive } from '../aliases';
 
