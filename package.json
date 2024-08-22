@@ -22,7 +22,7 @@
     "dist"
   ],
   "peerDependencies": {
-    "typescript": "5.4.x"
+    "typescript": ">=5.4"
   },
   "dependencies": {},
   "devDependencies": {
@@ -34,6 +34,6 @@
     "tailwindcss": "^3.3.6",
     "ts-node": "^10.9.1",
     "typedoc": "0.25.12",
-    "typescript": "^5.4"
+    "typescript": "^5"
   }
 }
