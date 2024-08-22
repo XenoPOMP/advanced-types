@@ -1,4 +1,4 @@
 ---
-to: src/aliases/<%= h.changeCase.pascalCase(name) %>
+to: src/<%= h.changeCase.paramCase(at || 'other') %>/<%= h.changeCase.pascalCase(name) %>.ts
 ---
-export type Sus = 12;
+export type <%= h.changeCase.pascalCase(name) %> = unknown;
