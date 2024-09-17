@@ -10,6 +10,9 @@ export * from './react';
 // Next.js
 export * from './next';
 
+// Aliases for deprecated types
+export * from './deprecation';
+
 // Legacy
 export { PromiseReturnType } from './legacy/PromiseReturnType';
 export { MetaInfo } from './legacy/MetaInfo';

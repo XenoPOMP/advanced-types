@@ -13,3 +13,5 @@ export { RecordValue } from './RecordValue';
 export { ReplaceReturnType } from './ReplaceReturnType';
 export { SelectivePartial } from './SelectivePartial';
 export { Undefinable } from './Undefinable';
+export * from './StrictOmit';
+

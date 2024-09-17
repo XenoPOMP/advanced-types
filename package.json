@@ -1,6 +1,6 @@
 {
   "name": "@xenopomp/advanced-types",
-  "version": "1.7.5",
+  "version": "2.0.0-rc.0",
   "description": "Library of advanced TypeScript types for React and Node projects.",
   "main": "src/index.ts",
   "types": "dist/index.d.ts",
@@ -22,6 +22,7 @@
     "dist"
   ],
   "peerDependencies": {
+    "type-fest": "^4",
     "typescript": ">=5.4"
   },
   "dependencies": {},
@@ -29,10 +30,12 @@
     "@trivago/prettier-plugin-sort-imports": "4.3.0",
     "@types/node": "^20.4.4",
     "@types/react": "^18.2.42",
+    "hygen": "^6.2.11",
     "prettier": "2.8.1",
     "shx": "^0.3.4",
     "tailwindcss": "^3.3.6",
     "ts-node": "^10.9.1",
+    "type-fest": "^4.25.0",
     "typedoc": "0.25.12",
     "typescript": "^5"
   }
