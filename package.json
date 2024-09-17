@@ -1,6 +1,6 @@
 {
   "name": "@xenopomp/advanced-types",
-  "version": "1.7.5",
+  "version": "2.0.0-rc.0",
   "description": "Library of advanced TypeScript types for React and Node projects.",
   "main": "src/index.ts",
   "types": "dist/index.d.ts",
@@ -22,8 +22,8 @@
     "dist"
   ],
   "peerDependencies": {
-    "typescript": ">=5.4",
-    "type-fest": "^4"
+    "type-fest": "^4",
+    "typescript": ">=5.4"
   },
   "dependencies": {},
   "devDependencies": {
