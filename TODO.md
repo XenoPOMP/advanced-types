@@ -1,4 +1,4 @@
 # List of TODOs
 
-- [ ] OneOf type
-  - [ ] OnlyFirst helper type
+- [x] OneOf type
+  - [x] OnlyFirst helper type
