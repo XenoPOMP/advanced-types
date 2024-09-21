@@ -7,6 +7,29 @@ export type OnlyFirst<F, S> = F & { [Key in keyof Omit<S, keyof F>]?: never };
 
 /**
  * Chooses only one of types array.
+ *
+ * @example
+ * type Email = {
+ *   person: string;
+ *   content: string;
+ *   address: string;
+ * };
+ *
+ * type Mail = {
+ *   person: string;
+ *   content: string;
+ *   postCode: number;
+ * };
+ *
+ * type Letter = OneOf<[Email, Mail]>;
+ *
+ * // Will error, cause address is not assignable to type never.
+ * const email: Letter = {
+ *   person: 'person',
+ *   content: 'content',
+ *   address: '',
+ *   postCode: 12,
+ * };
  */
 export type OneOf<
   TypesArray extends any[],
