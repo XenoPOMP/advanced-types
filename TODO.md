@@ -1,3 +1,4 @@
 # List of TODOs
 
-- [X] Create ``.config`` folder
+- [ ] OneOf type
+  - [ ] FirstOf helper type

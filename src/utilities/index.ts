@@ -15,3 +15,5 @@ export { SelectivePartial } from './SelectivePartial';
 export { Undefinable } from './Undefinable';
 export * from './StrictOmit';
 
+export * from './OneOf';
+
