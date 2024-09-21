@@ -17,3 +17,5 @@ export * from './StrictOmit';
 
 export * from './OneOf';
 
+export * from './MergeTypes';
+
