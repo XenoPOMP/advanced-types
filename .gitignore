@@ -3,3 +3,6 @@ dist
 .nmprc
 
 *error.log
+
+.idea
+!.idea/.gitignore
