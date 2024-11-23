@@ -1,4 +1,6 @@
+import { FC } from 'react';
+
 /**
- * @TODO
+ * Extracts type of props from FC type.
  */
-export type FcProps = unknown;
+export type FcProps<Comp> = Comp extends FC<infer Props> ? Props : never;

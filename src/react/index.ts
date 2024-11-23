@@ -8,3 +8,5 @@ export { PropsWithId } from './PropsWithId';
 export { PropsWithStyles } from './PropsWithStyles';
 
 export { FunctionalChildren } from './FunctionalChildren';
+export * from './FcProps';
+
